@@ -1,4 +1,4 @@
-This is the repository to which the CSCN8010 practical labs are submitted to in the first part of the course (up to the student success week).
+This is the repository to which the CSCN8000 practical labs are submitted to in the first part of the course (up to the student success week).
 
 Setup
 
