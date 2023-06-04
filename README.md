@@ -11,4 +11,3 @@ Setup
 
 4. Commit and push your updates to your forked repository on Github
 
-5. Note, you can use the same environment as CSCN8000, so no need to create another one
