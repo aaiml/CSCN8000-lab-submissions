@@ -7,7 +7,7 @@ Setup
 2. Clone the forked repository to your local computer (git clone REPO-URL, where REPO-URL is the URL of the forked 
     repository)
   
-3. Follow the instruction in Student Submission Subfolder Setup
+3. Follow the instruction in [Student Submission Subfolder Setup](https://github.com/aaiml/CSCN8000-lab-submissions/blob/main/students-submissions/readme.md)
 
 4. Commit and push your updates to your forked repository on Github
 
