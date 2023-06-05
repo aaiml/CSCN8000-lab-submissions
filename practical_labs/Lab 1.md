@@ -35,7 +35,7 @@ Part A-
          
             Feel free to add additional Markdown elements (description/additional comments)
             
-	10. Push the notebook to your lab-submission fork, and create a PR
+	  10. Push the notebook to your lab-submission fork, and create a PR
        
 Part B-  
 
