@@ -41,7 +41,7 @@ Part B-
 
         1.Solve the following two system of linear equations using matrices (find the values of x1 and x2) and 
           determine the number of solutions using the functions. 
-	        2x1+3x2-4x3=6,x1,-4x2=8
+	        2x1+3x2-4x3=6,x1-4x2=8
 	        3y1-4y2+5y3=10,-y1+2y2-4y3=8
 
         2.Publish the notebook as an HTML using GitHub Pages
