@@ -15131,7 +15131,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -15238,10 +15238,10 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>arr_2: [[0.40329151 0.79158884 0.58843237]]
-arr_3: [[0.9232733  0.9152338  0.87104205]
- [0.90580419 0.2913051  0.43298241]
- [0.50080301 0.99743162 0.23325001]]
+<pre>arr_2: [[0.73616888 0.41622939 0.24141534]]
+arr_3: [[0.54872867 0.94375094 0.60251328]
+ [0.15891104 0.35153087 0.37668502]
+ [0.36607661 0.19105667 0.95975246]]
 </pre>
 </div>
 </div>
@@ -15322,7 +15322,7 @@ arr_3: [[0.9232733  0.9152338  0.87104205]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[80]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">arr_6_1</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]]</span>
@@ -15509,7 +15509,7 @@ reshape of x to (3,1)
 x: [[ 2]
  [-1]
  [-8]]
-reshape of x to (3,1) and finding dimensions
+reshape of y to (3,1) and finding dimensions
 y: 2
 </pre>
 </div>
@@ -15605,7 +15605,7 @@ subtraction will done by row wise by elements like 10 - 1, 11 - 2, 12 - 3, 13 - 
  [9 9 9]
  [9 9 9]]
 -------
-if X = 3 X 3 and Y = 3 * 1 subtraction is done then it will subtract from Y single row with X all rows.
+if X = 3 * 3 and Y = 3 * 1 subtraction is done then it will subtract from Y single row with X all rows.
 -------
 [[9 9 9]
  [6 6 6]
@@ -15706,7 +15706,7 @@ print(arr_7 * arr_10) error for this: operands could not be broadcast together w
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">iris</span><span class="p">()</span>
@@ -15769,11 +15769,12 @@ print(arr_7 * arr_10) error for this: operands could not be broadcast together w
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">gapminder</span><span class="p">()</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;continent==&#39;Oceania&#39;&quot;</span><span class="p">)</span>
-<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;year&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;lifeExp&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;country&quot;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Life Expectancy in Oceania&#39;</span><span class="p">)</span><span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;year&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;lifeExp&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;country&quot;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Life Expectancy in Oceania&#39;</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -15792,9 +15793,14 @@ print(arr_7 * arr_10) error for this: operands could not be broadcast together w
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-
-
-
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-cyan-fg">  Cell </span><span class="ansi-green-fg">In[12], line 2</span>
+<span class="ansi-red-fg">    fig = px.line(df, x=&#34;year&#34;, y=&#34;lifeExp&#34;, color=&#34;country&#34;, title=&#39;Life Expectancy in Oceania&#39;)fig.show()</span>
+                                                                                                 ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+</pre>
+</div>
 </div>
 
 </div>
@@ -15818,7 +15824,7 @@ print(arr_7 * arr_10) error for this: operands could not be broadcast together w
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">tips</span><span class="p">()</span>
@@ -15863,9 +15869,30 @@ print(arr_7 * arr_10) error for this: operands could not be broadcast together w
 <li>2x1+3x2-4x3=6,x1-4x2=8</li>
 <li>3y1-4y2+5y3=10,-y1+2y2-4y3=8</li>
 </ol>
+<p>To find the values of x1, x2, and x3, you need a system of linear equations with the same number of equations as variables. In this case, you have two equations (2x1 + 3x2 - 4x3 = 6 and x1 - 4x2 = 8) and three variables (x1, x2, and x3).</p>
+<p>To solve for x1, x2, and x3, we need a third equation. Without any further constraints, there are infinitely many solutions possible.</p>
+<p>For instance, let's consider one possible solution:</p>
+<p>x1 = 1
+x2 = 2
+x3 = 3</p>
+<p>By substituting these values into the equations, we get:</p>
+<ol>
+<li><p>2(1) + 3(2) - 4(3) = 6 <br/>
+2 + 6 - 12 = 6 <br/>
+8 - 12 = 6 <br/>
+-4 = 6 (not true) <br/></p>
+</li>
+<li><p>(1) - 4(2) = 8 <br/>
+1 - 8 = 8 <br/>
+-7 = 8 (not true) <br/></p>
+</li>
+</ol>
+<p>As you can see, the chosen values of x1 = 1, x2 = 2, and x3 = 3 do not satisfy the given equations. However, there are other combinations of x1, x2, and x3 that would satisfy the equations.</p>
+<p>To find a unique solution, we would need additional equations or constraints that relate the variables or provide specific values for some of the variables. Without such information, the system remains underdetermined, and we cannot determine unique numerical values for x1, x2, and x3.</p>
+<p>So from given equations, let us make the first one into two equations for solving two variables called x1 and x2.</p>
 <p>First values are</p>
 <ol>
-<li>2x<sub>1</sub>+3x<sub>2</sub>-4x<sub>3</sub>=6</li>
+<li>2x<sub>1</sub>+3x<sub>2</sub>=6</li>
 <li>x<sub>1</sub>-4x<sub>2</sub>=8</li>
 </ol>
 <p>The X matrix will be</p>
@@ -15904,7 +15931,7 @@ print(arr_7 * arr_10) error for this: operands could not be broadcast together w
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[57]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">]])</span>
@@ -15945,29 +15972,45 @@ print(arr_7 * arr_10) error for this: operands could not be broadcast together w
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ol start="2">
-<li>3y1-4y2+5y3=10,</li>
-</ol>
-<p>-y1+2y2-4y3=8</p>
+<p>Let us make the second one into third equation, where we are adding new equation to solve it.
+2. 3y1-4y2+5y3=10,
+-y1+2y2-4y3=8</p>
+<p>for making the third equation we will add second equation y1 value into first equation <br/>
+-y1+2y2-4y3=8 <br/>
+y1 = -8 + 2y2 -4y3 <br/></p>
+<p>adding y1 into first equation
+3y1-4y2+5y3=10 <br/>
+3(-8 + 2y2 -4y3)-4y2+5y3 = 10
+2y2 - 7y3 = 14</p>
+<p>where y1 is 0</p>
 <p>Second values are</p>
 <ol>
-<li>3y<sub>1</sub>-4y<sub>2</sub>+5y<sub>3</sub>=10</li>
+<li>3y<sub>1</sub>-4y<sub>2</sub>+5y<sub>3</sub>=10 <br/></li>
 <li>-y<sub>1</sub>+2y<sub>2</sub>-4y<sub>3</sub>=8</li>
+<li>2y<sub>2</sub>-7y<sub>3</sub>=14</li>
 </ol>
 <p>The X matrix will be</p>
 <table>
 <thead>
 <th>X<sub>1</sub></th>
 <th>X<sub>2</sub></th>
+<th>X<sub>3</sub></th>
 </thead>
 <tbody>
 <tr>
 <td>3</td>
 <td>-4</td>
+<td>5</td>
 </tr>
 <tr>
 <td>-1</td>
 <td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td>0</td>
+<td>2</td>
+<td>-7</td>
 </tr>
 </tbody>
 </table>
@@ -15979,13 +16022,15 @@ print(arr_7 * arr_10) error for this: operands could not be broadcast together w
 <tbody>
 <tr><td>10</td></tr>
 <tr><td>8</td></tr>
+<tr><td>14</td></tr>
 </tbody>
 </table>
 <p>The markdown table is not visible when convert to html
 | Y |
 | ---- | 
 | 10 |
-| 8 |</p>
+| 8 |
+| 14|</p>
 
 </div>
 </div>
@@ -15995,11 +16040,11 @@ print(arr_7 * arr_10) error for this: operands could not be broadcast together w
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[58]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]])</span>
-<span class="n">Y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">7</span><span class="p">]])</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span> <span class="mi">14</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The Solution is&#39;</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">))</span>
 </pre></div>
 
@@ -16020,7 +16065,7 @@ print(arr_7 * arr_10) error for this: operands could not be broadcast together w
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>The Solution is [26. 17.]
+<pre>The Solution is [15.16666667  9.91666667  0.83333333]
 </pre>
 </div>
 </div>
@@ -16029,6 +16074,17 @@ print(arr_7 * arr_10) error for this: operands could not be broadcast together w
 
 </div>
 
+</div>
+<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Therefore,-For-solving-the-linear-equation,-number-of-equations-should-be-equal-to-number-of-variables">Therefore, For solving the linear equation, number of equations should be equal to number of variables<a class="anchor-link" href="#Therefore,-For-solving-the-linear-equation,-number-of-equations-should-be-equal-to-number-of-variables">&#182;</a></h3>
+</div>
+</div>
+</div>
 </div>
 </body>
 
