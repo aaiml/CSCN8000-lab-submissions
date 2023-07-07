@@ -15135,7 +15135,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[72]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[205]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -15170,7 +15170,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[73]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[206]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">labData</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;D:\Conestoga\AIA\git_projects\CSCN8000-lab-submissions\practical_labs\Lab2_dataset.csv&quot;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
@@ -15190,7 +15190,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[73]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[206]:</div>
 
 
 
@@ -15266,36 +15266,15 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 </div>
 
-</div><div  class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[74]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">labData</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-<span class="n">X</span> <span class="o">=</span> <span class="n">labData</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;text&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">labData</span><span class="p">[</span><span class="s1">&#39;label_num&#39;</span><span class="p">]</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
 </div><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[76]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[207]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">CountVectorizer</span>
-<span class="n">countVect</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">()</span>
-<span class="n">X</span> <span class="o">=</span> <span class="n">countVect</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
-<span class="n">X</span><span class="o">.</span><span class="n">toarray</span><span class="p">()[:</span><span class="mi">2</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">labData</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -15309,65 +15288,45 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[207]:</div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">AttributeError</span>                            Traceback (most recent call last)
-Cell <span class="ansi-green-intense-fg ansi-bold">In[76], line 3</span>
-<span class="ansi-green-fg">      1</span> from sklearn.feature_extraction.text import CountVectorizer
-<span class="ansi-green-fg">      2</span> countVect = CountVectorizer()
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 3</span> X = countVect.fit_transform(X.values)
-<span class="ansi-green-fg">      4</span> X.toarray()[:2]
 
-File <span class="ansi-green-intense-fg ansi-bold">d:\Conestoga\FML\git_projects\CSCN8010\venv\CSCN8010_classic_ml\Lib\site-packages\sklearn\feature_extraction\text.py:1388</span>, in <span class="ansi-cyan-fg">CountVectorizer.fit_transform</span><span class="ansi-blue-intense-fg ansi-bold">(self, raw_documents, y)</span>
-<span class="ansi-green-fg">   1380</span>             warnings.warn(
-<span class="ansi-green-fg">   1381</span>                 &#34;Upper case characters found in&#34;
-<span class="ansi-green-fg">   1382</span>                 &#34; vocabulary while &#39;lowercase&#39;&#34;
-<span class="ansi-green-fg">   1383</span>                 &#34; is True. These entries will not&#34;
-<span class="ansi-green-fg">   1384</span>                 &#34; be matched with any documents&#34;
-<span class="ansi-green-fg">   1385</span>             )
-<span class="ansi-green-fg">   1386</span>             break
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 1388</span> vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
-<span class="ansi-green-fg">   1390</span> if self.binary:
-<span class="ansi-green-fg">   1391</span>     X.data.fill(1)
 
-File <span class="ansi-green-intense-fg ansi-bold">d:\Conestoga\FML\git_projects\CSCN8010\venv\CSCN8010_classic_ml\Lib\site-packages\sklearn\feature_extraction\text.py:1275</span>, in <span class="ansi-cyan-fg">CountVectorizer._count_vocab</span><span class="ansi-blue-intense-fg ansi-bold">(self, raw_documents, fixed_vocab)</span>
-<span class="ansi-green-fg">   1273</span> for doc in raw_documents:
-<span class="ansi-green-fg">   1274</span>     feature_counter = {}
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 1275</span>     for feature in analyze(doc):
-<span class="ansi-green-fg">   1276</span>         try:
-<span class="ansi-green-fg">   1277</span>             feature_idx = vocabulary[feature]
-
-File <span class="ansi-green-intense-fg ansi-bold">d:\Conestoga\FML\git_projects\CSCN8010\venv\CSCN8010_classic_ml\Lib\site-packages\sklearn\feature_extraction\text.py:111</span>, in <span class="ansi-cyan-fg">_analyze</span><span class="ansi-blue-intense-fg ansi-bold">(doc, analyzer, tokenizer, ngrams, preprocessor, decoder, stop_words)</span>
-<span class="ansi-green-fg">    109</span> else:
-<span class="ansi-green-fg">    110</span>     if preprocessor is not None:
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 111</span>         doc = preprocessor(doc)
-<span class="ansi-green-fg">    112</span>     if tokenizer is not None:
-<span class="ansi-green-fg">    113</span>         doc = tokenizer(doc)
-
-File <span class="ansi-green-intense-fg ansi-bold">d:\Conestoga\FML\git_projects\CSCN8010\venv\CSCN8010_classic_ml\Lib\site-packages\sklearn\feature_extraction\text.py:69</span>, in <span class="ansi-cyan-fg">_preprocess</span><span class="ansi-blue-intense-fg ansi-bold">(doc, accent_function, lower)</span>
-<span class="ansi-green-fg">     50</span> &#34;&#34;&#34;Chain together an optional series of text preprocessing steps to
-<span class="ansi-green-fg">     51</span> apply to a document.
-<span class="ansi-green-fg">     52</span> 
-<span class="ansi-green-intense-fg ansi-bold">   (...)</span>
-<span class="ansi-green-fg">     66</span>     preprocessed string
-<span class="ansi-green-fg">     67</span> &#34;&#34;&#34;
-<span class="ansi-green-fg">     68</span> if lower:
-<span class="ansi-green-intense-fg ansi-bold">---&gt; 69</span>     doc = doc.lower()
-<span class="ansi-green-fg">     70</span> if accent_function is not None:
-<span class="ansi-green-fg">     71</span>     doc = accent_function(doc)
-
-<span class="ansi-red-intense-fg ansi-bold">AttributeError</span>: &#39;numpy.ndarray&#39; object has no attribute &#39;lower&#39;</pre>
-</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>Unnamed: 0    0
+label         0
+text          0
+label_num     0
+dtype: int64</pre>
 </div>
 
 </div>
 
+</div>
+
+</div>
+
+</div><div  class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[223]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">CountVectorizer</span>
+<span class="n">countVectorizer</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">()</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">countVectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">labData</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">X</span><span class="o">.</span><span class="n">toarray</span><span class="p">()[:</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">labData</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">3</span><span class="p">]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
 </div>
 
 </div>
@@ -15387,10 +15346,10 @@ File <span class="ansi-green-intense-fg ansi-bold">d:\Conestoga\FML\git_projects
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[77]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[209]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">train_size</span> <span class="o">=</span> <span class="mf">0.75</span><span class="p">,</span> <span class="n">random_state</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">toarray</span><span class="p">(),</span> <span class="n">y</span><span class="p">,</span> <span class="n">train_size</span> <span class="o">=</span> <span class="mf">0.75</span><span class="p">,</span> <span class="n">random_state</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15405,7 +15364,7 @@ File <span class="ansi-green-intense-fg ansi-bold">d:\Conestoga\FML\git_projects
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4><B><U>Training the Gaussian Naive Bayes classifier:</h4></B></U>
+<h4><B><U>Training and making predictions using the Gaussian Naive Bayes classifier:</h4></B></U>
 
 </div>
 </div>
@@ -15415,11 +15374,117 @@ File <span class="ansi-green-intense-fg ansi-bold">d:\Conestoga\FML\git_projects
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[210]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">gaussianClassifier</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span>
-<span class="n">gaussianClassifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">predictedGNBValues</span> <span class="o">=</span> <span class="n">gaussianClassifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="n">predictedGNBValues</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[210]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>array([1, 0, 0, ..., 0, 0, 0], dtype=int64)</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4><B><U>Training and making predictions using the Multinomial Naive Bayes classifier:</h4></B></U>
+
+</div>
+</div>
+</div>
+</div><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[211]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">multinomialClassifier</span> <span class="o">=</span> <span class="n">MultinomialNB</span><span class="p">()</span>
+<span class="n">predictedMNBValues</span> <span class="o">=</span> <span class="n">multinomialClassifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="n">predictedMNBValues</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[211]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>array([1, 0, 0, ..., 0, 0, 0], dtype=int64)</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4><B><U>Checking the accuracy of Gaussian Nayes Bayes Classifier:</h4></B></U>
+
+</div>
+</div>
+</div>
+</div><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[212]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">gaussianAccuracy</span> <span class="o">=</span> <span class="n">gaussianClassifier</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The Accuracy of Gaussian Naive Bayes Classifier is&quot;</span><span class="p">,</span> <span class="n">gaussianAccuracy</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15438,71 +15503,9 @@ File <span class="ansi-green-intense-fg ansi-bold">d:\Conestoga\FML\git_projects
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">ValueError</span>                                Traceback (most recent call last)
-Cell <span class="ansi-green-intense-fg ansi-bold">In[54], line 2</span>
-<span class="ansi-green-fg">      1</span> gaussianClassifier = GaussianNB()
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 2</span> gaussianClassifier.fit(X_train, y_train)
-
-File <span class="ansi-green-intense-fg ansi-bold">d:\Conestoga\FML\git_projects\CSCN8010\venv\CSCN8010_classic_ml\Lib\site-packages\sklearn\naive_bayes.py:267</span>, in <span class="ansi-cyan-fg">GaussianNB.fit</span><span class="ansi-blue-intense-fg ansi-bold">(self, X, y, sample_weight)</span>
-<span class="ansi-green-fg">    265</span> self._validate_params()
-<span class="ansi-green-fg">    266</span> y = self._validate_data(y=y)
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 267</span> return self._partial_fit(
-<span class="ansi-green-fg">    268</span>     X, y, np.unique(y), _refit=True, sample_weight=sample_weight
-<span class="ansi-green-fg">    269</span> )
-
-File <span class="ansi-green-intense-fg ansi-bold">d:\Conestoga\FML\git_projects\CSCN8010\venv\CSCN8010_classic_ml\Lib\site-packages\sklearn\naive_bayes.py:428</span>, in <span class="ansi-cyan-fg">GaussianNB._partial_fit</span><span class="ansi-blue-intense-fg ansi-bold">(self, X, y, classes, _refit, sample_weight)</span>
-<span class="ansi-green-fg">    425</span>     self.classes_ = None
-<span class="ansi-green-fg">    427</span> first_call = _check_partial_fit_first_call(self, classes)
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 428</span> X, y = self._validate_data(X, y, reset=first_call)
-<span class="ansi-green-fg">    429</span> if sample_weight is not None:
-<span class="ansi-green-fg">    430</span>     sample_weight = _check_sample_weight(sample_weight, X)
-
-File <span class="ansi-green-intense-fg ansi-bold">d:\Conestoga\FML\git_projects\CSCN8010\venv\CSCN8010_classic_ml\Lib\site-packages\sklearn\base.py:584</span>, in <span class="ansi-cyan-fg">BaseEstimator._validate_data</span><span class="ansi-blue-intense-fg ansi-bold">(self, X, y, reset, validate_separately, **check_params)</span>
-<span class="ansi-green-fg">    582</span>         y = check_array(y, input_name=&#34;y&#34;, **check_y_params)
-<span class="ansi-green-fg">    583</span>     else:
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 584</span>         X, y = check_X_y(X, y, **check_params)
-<span class="ansi-green-fg">    585</span>     out = X, y
-<span class="ansi-green-fg">    587</span> if not no_val_X and check_params.get(&#34;ensure_2d&#34;, True):
-
-File <span class="ansi-green-intense-fg ansi-bold">d:\Conestoga\FML\git_projects\CSCN8010\venv\CSCN8010_classic_ml\Lib\site-packages\sklearn\utils\validation.py:1106</span>, in <span class="ansi-cyan-fg">check_X_y</span><span class="ansi-blue-intense-fg ansi-bold">(X, y, accept_sparse, accept_large_sparse, dtype, order, copy, force_all_finite, ensure_2d, allow_nd, multi_output, ensure_min_samples, ensure_min_features, y_numeric, estimator)</span>
-<span class="ansi-green-fg">   1101</span>         estimator_name = _check_estimator_name(estimator)
-<span class="ansi-green-fg">   1102</span>     raise ValueError(
-<span class="ansi-green-fg">   1103</span>         f&#34;{estimator_name} requires y to be passed, but the target y is None&#34;
-<span class="ansi-green-fg">   1104</span>     )
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 1106</span> X = check_array(
-<span class="ansi-green-fg">   1107</span>     X,
-<span class="ansi-green-fg">   1108</span>     accept_sparse=accept_sparse,
-<span class="ansi-green-fg">   1109</span>     accept_large_sparse=accept_large_sparse,
-<span class="ansi-green-fg">   1110</span>     dtype=dtype,
-<span class="ansi-green-fg">   1111</span>     order=order,
-<span class="ansi-green-fg">   1112</span>     copy=copy,
-<span class="ansi-green-fg">   1113</span>     force_all_finite=force_all_finite,
-<span class="ansi-green-fg">   1114</span>     ensure_2d=ensure_2d,
-<span class="ansi-green-fg">   1115</span>     allow_nd=allow_nd,
-<span class="ansi-green-fg">   1116</span>     ensure_min_samples=ensure_min_samples,
-<span class="ansi-green-fg">   1117</span>     ensure_min_features=ensure_min_features,
-<span class="ansi-green-fg">   1118</span>     estimator=estimator,
-<span class="ansi-green-fg">   1119</span>     input_name=&#34;X&#34;,
-<span class="ansi-green-fg">   1120</span> )
-<span class="ansi-green-fg">   1122</span> y = _check_y(y, multi_output=multi_output, y_numeric=y_numeric, estimator=estimator)
-<span class="ansi-green-fg">   1124</span> check_consistent_length(X, y)
-
-File <span class="ansi-green-intense-fg ansi-bold">d:\Conestoga\FML\git_projects\CSCN8010\venv\CSCN8010_classic_ml\Lib\site-packages\sklearn\utils\validation.py:778</span>, in <span class="ansi-cyan-fg">check_array</span><span class="ansi-blue-intense-fg ansi-bold">(array, accept_sparse, accept_large_sparse, dtype, order, copy, force_all_finite, ensure_2d, allow_nd, ensure_min_samples, ensure_min_features, estimator, input_name)</span>
-<span class="ansi-green-fg">    774</span>     pandas_requires_conversion = any(
-<span class="ansi-green-fg">    775</span>         _pandas_dtype_needs_early_conversion(i) for i in dtypes_orig
-<span class="ansi-green-fg">    776</span>     )
-<span class="ansi-green-fg">    777</span>     if all(isinstance(dtype_iter, np.dtype) for dtype_iter in dtypes_orig):
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 778</span>         dtype_orig = np.result_type(*dtypes_orig)
-<span class="ansi-green-fg">    780</span> elif hasattr(array, &#34;iloc&#34;) and hasattr(array, &#34;dtype&#34;):
-<span class="ansi-green-fg">    781</span>     # array is a pandas series
-<span class="ansi-green-fg">    782</span>     pandas_requires_conversion = _pandas_dtype_needs_early_conversion(array.dtype)
-
-File <span class="ansi-green-intense-fg ansi-bold">&lt;__array_function__ internals&gt;:200</span>, in <span class="ansi-cyan-fg">result_type</span><span class="ansi-blue-intense-fg ansi-bold">(*args, **kwargs)</span>
-
-<span class="ansi-red-intense-fg ansi-bold">ValueError</span>: at least one array or dtype is required</pre>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>The Accuracy of Gaussian Naive Bayes Classifier is 0.9644238205723125
+</pre>
 </div>
 </div>
 
@@ -15517,10 +15520,101 @@ File <span class="ansi-green-intense-fg ansi-bold">&lt;__array_function__ intern
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4><B><U>Checking the accuracy of Multinomial Nayes Bayes Classifier:</h4></B></U>
 
 </div>
 </div>
 </div>
+</div><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[213]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">multinomialAccuracy</span> <span class="o">=</span> <span class="n">multinomialClassifier</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The Accuracy of Multinomial Naive Bayes Classifier is&quot;</span><span class="p">,</span> <span class="n">multinomialAccuracy</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>The Accuracy of Multinomial Naive Bayes Classifier is 0.9783449342614076
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4><B><U>Comparing the Gaussian and Multinomial Nayes Bayes Classifier:</h4></B></U>
+
+</div>
+</div>
+</div>
+</div><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[214]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="n">gaussianAccuracy</span> <span class="o">&gt;</span> <span class="n">multinomialAccuracy</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The Best Performing Model after comparing the accuracy is Gaussian Naive Bayes.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The Best Performing Model after comparing the accuracy is Multinomial Naive Bayes.&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>The Best Performing Model after comparing the accuracy is Multinomial Naive Bayes.
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -15550,11 +15644,11 @@ File <span class="ansi-green-intense-fg ansi-bold">&lt;__array_function__ intern
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[215]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">dataNYC</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;D:\Conestoga\AIA\git_projects\CSCN8000-lab-submissions\practical_labs\AB_NYC_2019.csv&#39;</span><span class="p">)</span>
-<span class="n">dataNYC</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">dataNYC</span>
 </pre></div>
 
      </div>
@@ -15570,7 +15664,7 @@ File <span class="ansi-green-intense-fg ansi-bold">&lt;__array_function__ intern
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[215]:</div>
 
 
 
@@ -15707,8 +15801,123 @@ File <span class="ansi-green-intense-fg ansi-bold">&lt;__array_function__ intern
       <td>1</td>
       <td>0</td>
     </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>48890</th>
+      <td>36484665</td>
+      <td>Charming one bedroom - newly renovated rowhouse</td>
+      <td>8232441</td>
+      <td>Sabrina</td>
+      <td>Brooklyn</td>
+      <td>Bedford-Stuyvesant</td>
+      <td>40.67853</td>
+      <td>-73.94995</td>
+      <td>Private room</td>
+      <td>70</td>
+      <td>2</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>48891</th>
+      <td>36485057</td>
+      <td>Affordable room in Bushwick/East Williamsburg</td>
+      <td>6570630</td>
+      <td>Marisol</td>
+      <td>Brooklyn</td>
+      <td>Bushwick</td>
+      <td>40.70184</td>
+      <td>-73.93317</td>
+      <td>Private room</td>
+      <td>40</td>
+      <td>4</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <th>48892</th>
+      <td>36485431</td>
+      <td>Sunny Studio at Historical Neighborhood</td>
+      <td>23492952</td>
+      <td>Ilgar &amp; Aysel</td>
+      <td>Manhattan</td>
+      <td>Harlem</td>
+      <td>40.81475</td>
+      <td>-73.94867</td>
+      <td>Entire home/apt</td>
+      <td>115</td>
+      <td>10</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <th>48893</th>
+      <td>36485609</td>
+      <td>43rd St. Time Square-cozy single bed</td>
+      <td>30985759</td>
+      <td>Taz</td>
+      <td>Manhattan</td>
+      <td>Hell's Kitchen</td>
+      <td>40.75751</td>
+      <td>-73.99112</td>
+      <td>Shared room</td>
+      <td>55</td>
+      <td>1</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>6</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>48894</th>
+      <td>36487245</td>
+      <td>Trendy duplex in the very heart of Hell's Kitchen</td>
+      <td>68119814</td>
+      <td>Christophe</td>
+      <td>Manhattan</td>
+      <td>Hell's Kitchen</td>
+      <td>40.76404</td>
+      <td>-73.98933</td>
+      <td>Private room</td>
+      <td>90</td>
+      <td>7</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1</td>
+      <td>23</td>
+    </tr>
   </tbody>
 </table>
+<p>48895 rows × 16 columns</p>
 </div>
 </div>
 
@@ -15735,12 +15944,12 @@ File <span class="ansi-green-intense-fg ansi-bold">&lt;__array_function__ intern
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[216]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">meanPrice</span> <span class="o">=</span> <span class="n">dataNYC</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 <span class="n">medianPrice</span> <span class="o">=</span> <span class="n">dataNYC</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
-<span class="n">percentile95</span> <span class="o">=</span> <span class="n">dataNYC</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.95</span><span class="p">)</span>
+<span class="n">percentilePrice</span> <span class="o">=</span> <span class="n">dataNYC</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.95</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15765,12 +15974,12 @@ File <span class="ansi-green-intense-fg ansi-bold">&lt;__array_function__ intern
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[217]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">dataMean</span> <span class="o">=</span> <span class="n">dataNYC</span><span class="p">[</span><span class="n">dataNYC</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">meanPrice</span><span class="p">]</span>
 <span class="n">dataMedian</span> <span class="o">=</span> <span class="n">dataNYC</span><span class="p">[</span><span class="n">dataNYC</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">medianPrice</span><span class="p">]</span>
-<span class="n">dataPercentile</span> <span class="o">=</span> <span class="n">dataNYC</span><span class="p">[</span><span class="n">dataNYC</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">percentile95</span><span class="p">]</span>
+<span class="n">dataPercentile</span> <span class="o">=</span> <span class="n">dataNYC</span><span class="p">[</span><span class="n">dataNYC</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">percentilePrice</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -15795,7 +16004,7 @@ File <span class="ansi-green-intense-fg ansi-bold">&lt;__array_function__ intern
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[218]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Outliers removed based on mean:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">dataNYC</span><span class="p">)</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">dataMean</span><span class="p">))</span>
@@ -15848,7 +16057,7 @@ Outliers removed based on 95th percentile: 2441
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[219]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">dataMean</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;AB_NYC_2019.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -15859,6 +16068,312 @@ Outliers removed based on 95th percentile: 2441
      </div>
 </div>
 </div>
+</div>
+
+</div><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[220]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Outliers removed based on mean:&quot;</span><span class="p">,</span> <span class="n">dataMean</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Outliers removed based on mean:              id                                               name   host_id   
+0          2539                 Clean &amp; quiet apt home by the park      2787  \
+2          3647                THE VILLAGE OF HARLEM....NEW YORK !      4632   
+3          3831                    Cozy Entire Floor of Brownstone      4869   
+4          5022   Entire Apt: Spacious Studio/Loft by central park      7192   
+6          5121                                    BlissArtsSpace!      7356   
+...         ...                                                ...       ...   
+48890  36484665    Charming one bedroom - newly renovated rowhouse   8232441   
+48891  36485057      Affordable room in Bushwick/East Williamsburg   6570630   
+48892  36485431            Sunny Studio at Historical Neighborhood  23492952   
+48893  36485609               43rd St. Time Square-cozy single bed  30985759   
+48894  36487245  Trendy duplex in the very heart of Hell&#39;s Kitchen  68119814   
+
+           host_name neighbourhood_group       neighbourhood  latitude   
+0               John            Brooklyn          Kensington  40.64749  \
+2          Elisabeth           Manhattan              Harlem  40.80902   
+3        LisaRoxanne            Brooklyn        Clinton Hill  40.68514   
+4              Laura           Manhattan         East Harlem  40.79851   
+6              Garon            Brooklyn  Bedford-Stuyvesant  40.68688   
+...              ...                 ...                 ...       ...   
+48890        Sabrina            Brooklyn  Bedford-Stuyvesant  40.67853   
+48891        Marisol            Brooklyn            Bushwick  40.70184   
+48892  Ilgar &amp; Aysel           Manhattan              Harlem  40.81475   
+48893            Taz           Manhattan      Hell&#39;s Kitchen  40.75751   
+48894     Christophe           Manhattan      Hell&#39;s Kitchen  40.76404   
+
+       longitude        room_type  price  minimum_nights  number_of_reviews   
+0      -73.97237     Private room    149               1                  9  \
+2      -73.94190     Private room    150               3                  0   
+3      -73.95976  Entire home/apt     89               1                270   
+4      -73.94399  Entire home/apt     80              10                  9   
+6      -73.95596     Private room     60              45                 49   
+...          ...              ...    ...             ...                ...   
+48890  -73.94995     Private room     70               2                  0   
+48891  -73.93317     Private room     40               4                  0   
+48892  -73.94867  Entire home/apt    115              10                  0   
+48893  -73.99112      Shared room     55               1                  0   
+48894  -73.98933     Private room     90               7                  0   
+
+      last_review  reviews_per_month  calculated_host_listings_count   
+0      2018-10-19               0.21                               6  \
+2             NaN                NaN                               1   
+3      2019-07-05               4.64                               1   
+4      2018-11-19               0.10                               1   
+6      2017-10-05               0.40                               1   
+...           ...                ...                             ...   
+48890         NaN                NaN                               2   
+48891         NaN                NaN                               2   
+48892         NaN                NaN                               1   
+48893         NaN                NaN                               6   
+48894         NaN                NaN                               1   
+
+       availability_365  
+0                   365  
+2                   365  
+3                   194  
+4                     0  
+6                     0  
+...                 ...  
+48890                 9  
+48891                36  
+48892                27  
+48893                 2  
+48894                23  
+
+[34016 rows x 16 columns]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[221]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Outliers removed based on median:&quot;</span><span class="p">,</span> <span class="n">dataMedian</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Outliers removed based on median:              id                                               name    host_id   
+3          3831                    Cozy Entire Floor of Brownstone       4869  \
+4          5022   Entire Apt: Spacious Studio/Loft by central park       7192   
+6          5121                                    BlissArtsSpace!       7356   
+7          5178                   Large Furnished Room Near B&#39;way        8967   
+8          5203                 Cozy Clean Guest Room - Family Apt       7490   
+...         ...                                                ...        ...   
+48889  36484363                                 QUIT PRIVATE HOUSE  107716952   
+48890  36484665    Charming one bedroom - newly renovated rowhouse    8232441   
+48891  36485057      Affordable room in Bushwick/East Williamsburg    6570630   
+48893  36485609               43rd St. Time Square-cozy single bed   30985759   
+48894  36487245  Trendy duplex in the very heart of Hell&#39;s Kitchen   68119814   
+
+         host_name neighbourhood_group       neighbourhood  latitude   
+3      LisaRoxanne            Brooklyn        Clinton Hill  40.68514  \
+4            Laura           Manhattan         East Harlem  40.79851   
+6            Garon            Brooklyn  Bedford-Stuyvesant  40.68688   
+7         Shunichi           Manhattan      Hell&#39;s Kitchen  40.76489   
+8        MaryEllen           Manhattan     Upper West Side  40.80178   
+...            ...                 ...                 ...       ...   
+48889      Michael              Queens             Jamaica  40.69137   
+48890      Sabrina            Brooklyn  Bedford-Stuyvesant  40.67853   
+48891      Marisol            Brooklyn            Bushwick  40.70184   
+48893          Taz           Manhattan      Hell&#39;s Kitchen  40.75751   
+48894   Christophe           Manhattan      Hell&#39;s Kitchen  40.76404   
+
+       longitude        room_type  price  minimum_nights  number_of_reviews   
+3      -73.95976  Entire home/apt     89               1                270  \
+4      -73.94399  Entire home/apt     80              10                  9   
+6      -73.95596     Private room     60              45                 49   
+7      -73.98493     Private room     79               2                430   
+8      -73.96723     Private room     79               2                118   
+...          ...              ...    ...             ...                ...   
+48889  -73.80844     Private room     65               1                  0   
+48890  -73.94995     Private room     70               2                  0   
+48891  -73.93317     Private room     40               4                  0   
+48893  -73.99112      Shared room     55               1                  0   
+48894  -73.98933     Private room     90               7                  0   
+
+      last_review  reviews_per_month  calculated_host_listings_count   
+3      2019-07-05               4.64                               1  \
+4      2018-11-19               0.10                               1   
+6      2017-10-05               0.40                               1   
+7      2019-06-24               3.47                               1   
+8      2017-07-21               0.99                               1   
+...           ...                ...                             ...   
+48889         NaN                NaN                               2   
+48890         NaN                NaN                               2   
+48891         NaN                NaN                               2   
+48893         NaN                NaN                               6   
+48894         NaN                NaN                               1   
+
+       availability_365  
+3                   194  
+4                     0  
+6                     0  
+7                   220  
+8                     0  
+...                 ...  
+48889               163  
+48890                 9  
+48891                36  
+48893                 2  
+48894                23  
+
+[24472 rows x 16 columns]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[222]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Outliers removed based on 95th percentile:&quot;</span><span class="p">,</span> <span class="n">dataPercentile</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Outliers removed based on 95th percentile:              id                                               name   host_id   
+0          2539                 Clean &amp; quiet apt home by the park      2787  \
+1          2595                              Skylit Midtown Castle      2845   
+2          3647                THE VILLAGE OF HARLEM....NEW YORK !      4632   
+3          3831                    Cozy Entire Floor of Brownstone      4869   
+4          5022   Entire Apt: Spacious Studio/Loft by central park      7192   
+...         ...                                                ...       ...   
+48890  36484665    Charming one bedroom - newly renovated rowhouse   8232441   
+48891  36485057      Affordable room in Bushwick/East Williamsburg   6570630   
+48892  36485431            Sunny Studio at Historical Neighborhood  23492952   
+48893  36485609               43rd St. Time Square-cozy single bed  30985759   
+48894  36487245  Trendy duplex in the very heart of Hell&#39;s Kitchen  68119814   
+
+           host_name neighbourhood_group       neighbourhood  latitude   
+0               John            Brooklyn          Kensington  40.64749  \
+1           Jennifer           Manhattan             Midtown  40.75362   
+2          Elisabeth           Manhattan              Harlem  40.80902   
+3        LisaRoxanne            Brooklyn        Clinton Hill  40.68514   
+4              Laura           Manhattan         East Harlem  40.79851   
+...              ...                 ...                 ...       ...   
+48890        Sabrina            Brooklyn  Bedford-Stuyvesant  40.67853   
+48891        Marisol            Brooklyn            Bushwick  40.70184   
+48892  Ilgar &amp; Aysel           Manhattan              Harlem  40.81475   
+48893            Taz           Manhattan      Hell&#39;s Kitchen  40.75751   
+48894     Christophe           Manhattan      Hell&#39;s Kitchen  40.76404   
+
+       longitude        room_type  price  minimum_nights  number_of_reviews   
+0      -73.97237     Private room    149               1                  9  \
+1      -73.98377  Entire home/apt    225               1                 45   
+2      -73.94190     Private room    150               3                  0   
+3      -73.95976  Entire home/apt     89               1                270   
+4      -73.94399  Entire home/apt     80              10                  9   
+...          ...              ...    ...             ...                ...   
+48890  -73.94995     Private room     70               2                  0   
+48891  -73.93317     Private room     40               4                  0   
+48892  -73.94867  Entire home/apt    115              10                  0   
+48893  -73.99112      Shared room     55               1                  0   
+48894  -73.98933     Private room     90               7                  0   
+
+      last_review  reviews_per_month  calculated_host_listings_count   
+0      2018-10-19               0.21                               6  \
+1      2019-05-21               0.38                               2   
+2             NaN                NaN                               1   
+3      2019-07-05               4.64                               1   
+4      2018-11-19               0.10                               1   
+...           ...                ...                             ...   
+48890         NaN                NaN                               2   
+48891         NaN                NaN                               2   
+48892         NaN                NaN                               1   
+48893         NaN                NaN                               6   
+48894         NaN                NaN                               1   
+
+       availability_365  
+0                   365  
+1                   355  
+2                   365  
+3                   194  
+4                     0  
+...                 ...  
+48890                 9  
+48891                36  
+48892                27  
+48893                 2  
+48894                23  
+
+[46454 rows x 16 columns]
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
