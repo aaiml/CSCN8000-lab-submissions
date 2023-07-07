@@ -1,0 +1,2 @@
+Student Name: ABIJITH SURESH K M Student ID: 8899968 Subject Name: Artificial Intelligence Algorithms and Mathematics (CSCN8000)
+Program Name: Applied Artificial Intelligence and Machine Learning (1557) College : Conestoga College (Waterloo Campus)
