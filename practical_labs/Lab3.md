@@ -5,6 +5,7 @@ This lab provides insight into the concepts of Supervised Learning -Regression a
 **Part A:**
 
 Problem Statement: Consider the dataset Credit Card Fraud Detection from Kaggle and build a machine-learning model that detects whether a credit card transaction is fraudulent. Demonstrate the steps of data preprocessing and analysis, consider applying train (0.7) and test (0.3), using the logistic regression to build the model, and evaluate to determine the accuracy.
+https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
 
 **Part B:**
 
