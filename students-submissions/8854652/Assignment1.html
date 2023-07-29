@@ -17182,7 +17182,7 @@ Name: count, dtype: int64</pre>
 
 <span class="c1"># standardize the input data</span>
 <span class="n">standardized_data</span> <span class="o">=</span> <span class="n">parkinsons_data_scaler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">random_data_reshaped</span><span class="p">)</span>
-<span class="c1">#standardized_data = scaler.transform(random_data)</span>
+
 <span class="nb">print</span><span class="p">(</span><span class="n">standardized_data</span><span class="p">)</span>
 
 <span class="n">prediction_random_data</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">standardized_data</span><span class="p">)</span>
