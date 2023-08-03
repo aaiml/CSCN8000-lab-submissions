@@ -6,7 +6,7 @@
     
     Draw elbow plot and from that figure out optimal value of k
     
-2.  Use the heart dataset from the Resources Folder.
+2.  Use the heart dataset from the Resources Folder or access it from https://www.kaggle.com/fedesoriano/heart-failure-prediction 
    
     Load heart disease dataset in pandas dataframe
    
