@@ -14588,7 +14588,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[77]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[86]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -14622,7 +14622,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[77]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[86]:</div>
 
 
 
@@ -14751,7 +14751,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[78]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[87]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">shape</span>
@@ -14772,7 +14772,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[78]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[87]:</div>
 
 
 
@@ -14792,7 +14792,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[79]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[88]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -14861,7 +14861,7 @@ memory usage: 86.2+ KB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[80]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[89]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">any</span><span class="p">()</span>
@@ -14878,12 +14878,11 @@ memory usage: 86.2+ KB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[81]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[90]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">class_counts</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;HeartDisease&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 
-<span class="c1"># Plotting the bar chart</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">class_counts</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">class_counts</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Heart Disease&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Count&#39;</span><span class="p">)</span>
@@ -14930,31 +14929,30 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[82]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[91]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Convert relevant columns to numeric types</span>
-<span class="n">numericCols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">,</span> <span class="s1">&#39;RestingBP&#39;</span><span class="p">,</span> <span class="s1">&#39;Cholesterol&#39;</span><span class="p">,</span> <span class="s1">&#39;MaxHR&#39;</span><span class="p">,</span> <span class="s1">&#39;Oldpeak&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">numericCols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">,</span> <span class="s1">&#39;RestingBP&#39;</span><span class="p">,</span> <span class="s1">&#39;Cholesterol&#39;</span><span class="p">,</span> <span class="s1">&#39;MaxHR&#39;</span><span class="p">,</span> <span class="s1">&#39;Oldpeak&#39;</span><span class="p">]</span>
 <span class="n">df</span><span class="p">[</span><span class="n">numericCols</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">numericCols</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">)</span>
 
-<span class="c1"># Removing outliers using Z-score</span>
+
 <span class="n">zScores</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">stats</span><span class="o">.</span><span class="n">zscore</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">numericCols</span><span class="p">]))</span>
 <span class="n">dfNoOutliers</span> <span class="o">=</span> <span class="n">df</span><span class="p">[(</span><span class="n">zScores</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)]</span>
 
-<span class="c1"># Convert text columns to numbers using label encoding and one-hot encoding</span>
+
 <span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span><span class="p">,</span> <span class="n">OneHotEncoder</span>
 
-<span class="c1"># Label encoding for binary categorical columns</span>
+
 <span class="n">binaryCols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">,</span> <span class="s1">&#39;FastingBS&#39;</span><span class="p">,</span> <span class="s1">&#39;ExerciseAngina&#39;</span><span class="p">]</span>
 <span class="n">labelEncoder</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">binaryCols</span><span class="p">:</span>
     <span class="n">dfNoOutliers</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">labelEncoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">dfNoOutliers</span><span class="p">[</span><span class="n">col</span><span class="p">])</span>
 
-<span class="c1"># Encoding for non-binary categorical columns</span>
+
 <span class="n">categoricalCols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;ChestPainType&#39;</span><span class="p">,</span> <span class="s1">&#39;RestingECG&#39;</span><span class="p">,</span> <span class="s1">&#39;ST_Slope&#39;</span><span class="p">]</span>
 <span class="n">dfNoOutliers</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">dfNoOutliers</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">categoricalCols</span><span class="p">)</span>
 
-<span class="c1"># Apply scaling to the numerical features</span>
+
 <span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
 
 <span class="n">scaler</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
@@ -14980,7 +14978,7 @@ class="
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>/tmp/ipykernel_4516/646338361.py:16: SettingWithCopyWarning: 
+<pre>/tmp/ipykernel_4516/3617473164.py:15: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
@@ -14999,24 +14997,23 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[83]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[92]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Assuming &#39;HeartDisease&#39; is the target column</span>
-<span class="n">X</span> <span class="o">=</span> <span class="n">dfNoOutliers</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;HeartDisease&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">dfNoOutliers</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;HeartDisease&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">dfNoOutliers</span><span class="p">[</span><span class="s1">&#39;HeartDisease&#39;</span><span class="p">]</span>
 
-<span class="c1"># Split the data into training and testing sets</span>
+
 <span class="n">XTrain</span><span class="p">,</span> <span class="n">XTest</span><span class="p">,</span> <span class="n">yTrain</span><span class="p">,</span> <span class="n">yTest</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
 
-<span class="c1"># SVM standalone model</span>
+
 <span class="n">svmModel</span> <span class="o">=</span> <span class="n">SVC</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">)</span>
 <span class="n">svmModel</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">XTrain</span><span class="p">,</span> <span class="n">yTrain</span><span class="p">)</span>
 <span class="n">svmPredictions</span> <span class="o">=</span> <span class="n">svmModel</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">XTest</span><span class="p">)</span>
 <span class="n">svmAccuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">yTest</span><span class="p">,</span> <span class="n">svmPredictions</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;SVM Standalone Model Accuracy: </span><span class="si">{</span><span class="n">svmAccuracy</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
-<span class="c1"># Decision Tree standalone model</span>
+
 <span class="n">dtModel</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
 <span class="n">dtModel</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">XTrain</span><span class="p">,</span> <span class="n">yTrain</span><span class="p">)</span>
 <span class="n">dtPredictions</span> <span class="o">=</span> <span class="n">dtModel</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">XTest</span><span class="p">)</span>
@@ -15058,19 +15055,18 @@ Decision Tree Standalone Model Accuracy: 0.79
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[84]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[93]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">BaggingClassifier</span>
 
-<span class="c1"># SVM Bagging model</span>
+
 <span class="n">svmBaggingModel</span> <span class="o">=</span> <span class="n">BaggingClassifier</span><span class="p">(</span><span class="n">base_estimator</span><span class="o">=</span><span class="n">SVC</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">),</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
 <span class="n">svmBaggingModel</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">XTrain</span><span class="p">,</span> <span class="n">yTrain</span><span class="p">)</span>
 <span class="n">svmBaggingPredictions</span> <span class="o">=</span> <span class="n">svmBaggingModel</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">XTest</span><span class="p">)</span>
 <span class="n">svmBaggingAccuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">yTest</span><span class="p">,</span> <span class="n">svmBaggingPredictions</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;SVM Bagging Model Accuracy: </span><span class="si">{</span><span class="n">svmBaggingAccuracy</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
-<span class="c1"># Decision Tree Bagging model</span>
 <span class="n">dtBaggingModel</span> <span class="o">=</span> <span class="n">BaggingClassifier</span><span class="p">(</span><span class="n">base_estimator</span><span class="o">=</span><span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">),</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
 <span class="n">dtBaggingModel</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">XTrain</span><span class="p">,</span> <span class="n">yTrain</span><span class="p">)</span>
 <span class="n">dtBaggingPredictions</span> <span class="o">=</span> <span class="n">dtBaggingModel</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">XTest</span><span class="p">)</span>
@@ -15099,6 +15095,8 @@ Decision Tree Standalone Model Accuracy: 0.79
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
 <pre>/home/justin/anaconda3/envs/Py310/lib/python3.10/site-packages/sklearn/ensemble/_base.py:166: FutureWarning: `base_estimator` was renamed to `estimator` in version 1.2 and will be removed in 1.4.
   warnings.warn(
+/home/justin/anaconda3/envs/Py310/lib/python3.10/site-packages/sklearn/ensemble/_base.py:166: FutureWarning: `base_estimator` was renamed to `estimator` in version 1.2 and will be removed in 1.4.
+  warnings.warn(
 </pre>
 </div>
 </div>
@@ -15116,19 +15114,6 @@ Decision Tree Bagging Model Accuracy: 0.88
 </div>
 </div>
 
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>/home/justin/anaconda3/envs/Py310/lib/python3.10/site-packages/sklearn/ensemble/_base.py:166: FutureWarning: `base_estimator` was renamed to `estimator` in version 1.2 and will be removed in 1.4.
-  warnings.warn(
-</pre>
-</div>
-</div>
-
 </div>
 
 </div>
@@ -15138,11 +15123,10 @@ Decision Tree Bagging Model Accuracy: 0.88
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[85]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[94]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Evaluation metrics</span>
-<span class="k">def</span> <span class="nf">printMetrics</span><span class="p">(</span><span class="n">yTrue</span><span class="p">,</span> <span class="n">yPred</span><span class="p">,</span> <span class="n">modelName</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">printMetrics</span><span class="p">(</span><span class="n">yTrue</span><span class="p">,</span> <span class="n">yPred</span><span class="p">,</span> <span class="n">modelName</span><span class="p">):</span>
     <span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">yTrue</span><span class="p">,</span> <span class="n">yPred</span><span class="p">)</span>
     <span class="n">precision</span> <span class="o">=</span> <span class="n">precision_score</span><span class="p">(</span><span class="n">yTrue</span><span class="p">,</span> <span class="n">yPred</span><span class="p">)</span>
     <span class="n">recall</span> <span class="o">=</span> <span class="n">recall_score</span><span class="p">(</span><span class="n">yTrue</span><span class="p">,</span> <span class="n">yPred</span><span class="p">)</span>
@@ -15160,11 +15144,11 @@ Decision Tree Bagging Model Accuracy: 0.88
     <span class="nb">print</span><span class="p">(</span><span class="n">confMatrix</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 
-<span class="c1"># Print metrics for standalone models</span>
+
 <span class="n">printMetrics</span><span class="p">(</span><span class="n">yTest</span><span class="p">,</span> <span class="n">svmPredictions</span><span class="p">,</span> <span class="s2">&quot;SVM Standalone&quot;</span><span class="p">)</span>
 <span class="n">printMetrics</span><span class="p">(</span><span class="n">yTest</span><span class="p">,</span> <span class="n">dtPredictions</span><span class="p">,</span> <span class="s2">&quot;Decision Tree Standalone&quot;</span><span class="p">)</span>
 
-<span class="c1"># Print metrics for Bagging models</span>
+
 <span class="n">printMetrics</span><span class="p">(</span><span class="n">yTest</span><span class="p">,</span> <span class="n">svmBaggingPredictions</span><span class="p">,</span> <span class="s2">&quot;SVM Bagging&quot;</span><span class="p">)</span>
 <span class="n">printMetrics</span><span class="p">(</span><span class="n">yTest</span><span class="p">,</span> <span class="n">dtBaggingPredictions</span><span class="p">,</span> <span class="s2">&quot;Decision Tree Bagging&quot;</span><span class="p">)</span>
 </pre></div>
