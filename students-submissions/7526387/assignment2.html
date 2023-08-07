@@ -15139,10 +15139,19 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 <span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">rc</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;figure.figsize&#39;</span><span class="p">:(</span><span class="mf">11.7</span><span class="p">,</span><span class="mf">8.27</span><span class="p">)})</span>
 
+<span class="k">def</span> <span class="nf">evaluate_data</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+  <span class="n">display</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Null values:&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+  <span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_columns&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+  <span class="n">display</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
+  <span class="n">pd</span><span class="o">.</span><span class="n">reset_option</span><span class="p">(</span><span class="s1">&#39;display.max_columns&#39;</span><span class="p">)</span>
+
 <span class="n">heart_csv</span> <span class="o">=</span> <span class="s1">&#39;../../data/heart.csv&#39;</span>
 <span class="n">heart_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">heart_csv</span><span class="p">)</span>
 
-<span class="n">heart_data</span><span class="o">.</span><span class="n">dtypes</span>
+<span class="n">evaluate_data</span><span class="p">(</span><span class="n">heart_data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">heart_data</span><span class="p">[</span><span class="s1">&#39;HeartDisease&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">heart_data</span><span class="p">[</span><span class="s1">&#39;HeartDisease&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="n">heart_data</span><span class="p">[</span><span class="s1">&#39;HeartDisease&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">heart_data</span><span class="p">[</span><span class="s1">&#39;HeartDisease&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span> <span class="p">)</span><span class="o">*</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="s1">&#39;% pd&#39;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15156,29 +15165,271 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputArea-child">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
 
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>Age                 int64
-Sex                object
-ChestPainType      object
-RestingBP           int64
-Cholesterol         int64
-FastingBS           int64
-RestingECG         object
-MaxHR               int64
-ExerciseAngina     object
-Oldpeak           float64
-ST_Slope           object
-HeartDisease        int64
-dtype: object</pre>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Age</th>
+      <th>Sex</th>
+      <th>ChestPainType</th>
+      <th>RestingBP</th>
+      <th>Cholesterol</th>
+      <th>FastingBS</th>
+      <th>RestingECG</th>
+      <th>MaxHR</th>
+      <th>ExerciseAngina</th>
+      <th>Oldpeak</th>
+      <th>ST_Slope</th>
+      <th>HeartDisease</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>40</td>
+      <td>M</td>
+      <td>ATA</td>
+      <td>140</td>
+      <td>289</td>
+      <td>0</td>
+      <td>Normal</td>
+      <td>172</td>
+      <td>N</td>
+      <td>0.0</td>
+      <td>Up</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>49</td>
+      <td>F</td>
+      <td>NAP</td>
+      <td>160</td>
+      <td>180</td>
+      <td>0</td>
+      <td>Normal</td>
+      <td>156</td>
+      <td>N</td>
+      <td>1.0</td>
+      <td>Flat</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>37</td>
+      <td>M</td>
+      <td>ATA</td>
+      <td>130</td>
+      <td>283</td>
+      <td>0</td>
+      <td>ST</td>
+      <td>98</td>
+      <td>N</td>
+      <td>0.0</td>
+      <td>Up</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>48</td>
+      <td>F</td>
+      <td>ASY</td>
+      <td>138</td>
+      <td>214</td>
+      <td>0</td>
+      <td>Normal</td>
+      <td>108</td>
+      <td>Y</td>
+      <td>1.5</td>
+      <td>Flat</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>54</td>
+      <td>M</td>
+      <td>NAP</td>
+      <td>150</td>
+      <td>195</td>
+      <td>0</td>
+      <td>Normal</td>
+      <td>122</td>
+      <td>N</td>
+      <td>0.0</td>
+      <td>Up</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 </div>
 
+</div>
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Null values: 0
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Age</th>
+      <th>RestingBP</th>
+      <th>Cholesterol</th>
+      <th>FastingBS</th>
+      <th>MaxHR</th>
+      <th>Oldpeak</th>
+      <th>HeartDisease</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>918.000000</td>
+      <td>918.000000</td>
+      <td>918.000000</td>
+      <td>918.000000</td>
+      <td>918.000000</td>
+      <td>918.000000</td>
+      <td>918.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>53.510893</td>
+      <td>132.396514</td>
+      <td>198.799564</td>
+      <td>0.233115</td>
+      <td>136.809368</td>
+      <td>0.887364</td>
+      <td>0.553377</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>9.432617</td>
+      <td>18.514154</td>
+      <td>109.384145</td>
+      <td>0.423046</td>
+      <td>25.460334</td>
+      <td>1.066570</td>
+      <td>0.497414</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>28.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>60.000000</td>
+      <td>-2.600000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>47.000000</td>
+      <td>120.000000</td>
+      <td>173.250000</td>
+      <td>0.000000</td>
+      <td>120.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>54.000000</td>
+      <td>130.000000</td>
+      <td>223.000000</td>
+      <td>0.000000</td>
+      <td>138.000000</td>
+      <td>0.600000</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>60.000000</td>
+      <td>140.000000</td>
+      <td>267.000000</td>
+      <td>0.000000</td>
+      <td>156.000000</td>
+      <td>1.500000</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>77.000000</td>
+      <td>200.000000</td>
+      <td>603.000000</td>
+      <td>1.000000</td>
+      <td>202.000000</td>
+      <td>6.200000</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>HeartDisease
+1    508
+0    410
+Name: count, dtype: int64
+55.34 % pd
+</pre>
+</div>
 </div>
 
 </div>
