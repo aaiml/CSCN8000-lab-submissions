@@ -1,6 +1,6 @@
 **Assignment 2 CSCN8000 Artificial Intelligence Algorithms and Mathematics**
 
-Download heart disease dataset heart.csv in Exercise folder and do following,  https://www.kaggle.com/fedesoriano/heart-failure-prediction
+Download heart disease dataset heart.csv in Resources folder and do following,  https://www.kaggle.com/fedesoriano/heart-failure-prediction
 
 1.Consider the heart disease dataset in pandas dataframe
 2.Remove outliers using mean,median,Z score. 
