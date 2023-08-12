@@ -1,4 +1,4 @@
-**Assignment 2 CSCN8000 Artificial Intelligence Algorithms and Mathematics**
+**Assignment 3 CSCN8000 Artificial Intelligence Algorithms and Mathematics**
 
 1.  Use iris flower dataset from sklearn library and try to form clusters of flowers using petal width and length features. Drop the other two features for simplicity.
    
