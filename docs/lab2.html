@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jupyter Notebook — generated with runcell</title>
+    <meta name="description" content="Exported with runcell — convert .ipynb notebooks to HTML or PDF anytime at runcell.dev." />
+    <meta name="generator" content="runcell" />
+    <style>
+        :root {
+            --jp-code-font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace;
+            --jp-content-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            --jp-cell-prompt-width: 64px;
+            --jp-input-prompt-color: #307fc1;
+            --jp-output-prompt-color: #bf5b3d;
+            --jp-cell-input-bg: #f7f7f7;
+            --jp-layout-color0: #ffffff;
+            --jp-layout-color1: #f7f7f7;
+            --jp-border-color1: #e0e0e0;
+            --jp-content-font-color0: #000000;
+            --jp-content-font-color1: #333333;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--jp-content-font-family);
+            font-size: 14px;
+            line-height: 1.5;
+            color: var(--jp-content-font-color0);
+            background-color: var(--jp-layout-color0);
+            margin: 0;
+            padding: 0;
+        }
+
+        .notebook-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Cell structure */
+        .cell {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 12px;
+            position: relative;
+        }
+
+        .cell-prompt {
+            min-width: var(--jp-cell-prompt-width);
+            width: var(--jp-cell-prompt-width);
+            font-family: var(--jp-code-font-family);
+            font-size: 12px;
+            padding: 10px 8px 10px 0;
+            text-align: right;
+            flex-shrink: 0;
+            user-select: none;
+        }
+
+        .cell-content {
+            flex: 1;
+            min-width: 0;
+            overflow: hidden;
+        }
+
+        /* Input prompt styling - Jupyter blue */
+        .input-prompt {
+            color: var(--jp-input-prompt-color);
+            font-weight: bold;
+        }
+
+        /* Output prompt styling - Jupyter red/orange */
+        .output-prompt {
+            color: var(--jp-output-prompt-color);
+            font-weight: bold;
+        }
+
+        /* Code cell input area */
+        .input-area {
+            background-color: var(--jp-cell-input-bg);
+            border: 1px solid var(--jp-border-color1);
+            border-radius: 2px;
+            padding: 8px 12px;
+            overflow-x: auto;
+        }
+
+        .input-area pre {
+            margin: 0;
+            font-family: var(--jp-code-font-family);
+            font-size: 13px;
+            line-height: 1.4;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        /* Output area */
+        .output-area {
+            margin-top: 0;
+        }
+
+        .output-wrapper {
+            display: flex;
+            flex-direction: row;
+            margin-top: 4px;
+        }
+
+        .output-content {
+            flex: 1;
+            min-width: 0;
+            padding: 8px 0;
+        }
+
+        .output-content pre {
+            margin: 0;
+            font-family: var(--jp-code-font-family);
+            font-size: 13px;
+            line-height: 1.4;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        /* Stream output (stdout/stderr) */
+        .output-stream {
+            font-family: var(--jp-code-font-family);
+            font-size: 13px;
+            line-height: 1.4;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .output-stderr {
+            background-color: #fdd;
+            padding: 8px 12px;
+            border-radius: 2px;
+        }
+
+        /* Execute result / display data */
+        .output-result {
+            padding: 4px 0;
+        }
+
+        .output-result pre {
+            margin: 0;
+            font-family: var(--jp-code-font-family);
+            font-size: 13px;
+        }
+
+        /* Image output */
+        .output-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* HTML output (DataFrames, etc.) */
+        .output-html {
+            overflow-x: auto;
+        }
+
+        .output-html table {
+            border-collapse: collapse;
+            font-size: 13px;
+            font-family: var(--jp-content-font-family);
+        }
+
+        .output-html table th,
+        .output-html table td {
+            border: 1px solid #ddd;
+            padding: 6px 10px;
+            text-align: left;
+        }
+
+        .output-html table th {
+            background-color: #f5f5f5;
+            font-weight: 600;
+        }
+
+        .output-html table tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        /* Error output */
+        .output-error {
+            background-color: #fff0f0;
+            padding: 8px 12px;
+            border-radius: 2px;
+            font-family: var(--jp-code-font-family);
+            font-size: 13px;
+            white-space: pre-wrap;
+        }
+
+        /* Markdown cell styling */
+        .markdown-cell {
+            padding: 10px 0;
+        }
+
+        .markdown-cell h1 {
+            font-size: 2em;
+            font-weight: 600;
+            margin: 0.67em 0;
+            padding-bottom: 0.3em;
+            border-bottom: 1px solid var(--jp-border-color1);
+        }
+
+        .markdown-cell h2 {
+            font-size: 1.5em;
+            font-weight: 600;
+            margin: 0.83em 0;
+            padding-bottom: 0.3em;
+            border-bottom: 1px solid var(--jp-border-color1);
+        }
+
+        .markdown-cell h3 {
+            font-size: 1.25em;
+            font-weight: 600;
+            margin: 1em 0;
+        }
+
+        .markdown-cell h4 {
+            font-size: 1em;
+            font-weight: 600;
+            margin: 1.33em 0;
+        }
+
+        .markdown-cell h5 {
+            font-size: 0.875em;
+            font-weight: 600;
+            margin: 1.67em 0;
+        }
+
+        .markdown-cell h6 {
+            font-size: 0.85em;
+            font-weight: 600;
+            margin: 2.33em 0;
+            color: #6a737d;
+        }
+
+        .markdown-cell p {
+            margin: 0 0 16px 0;
+            line-height: 1.6;
+        }
+
+        .markdown-cell code {
+            font-family: var(--jp-code-font-family);
+            font-size: 85%;
+            background-color: rgba(27, 31, 35, 0.05);
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+
+        .markdown-cell pre {
+            background-color: var(--jp-cell-input-bg);
+            border: 1px solid var(--jp-border-color1);
+            border-radius: 3px;
+            padding: 16px;
+            overflow-x: auto;
+            font-size: 85%;
+            line-height: 1.45;
+        }
+
+        .markdown-cell pre code {
+            background-color: transparent;
+            padding: 0;
+            border-radius: 0;
+            font-size: 100%;
+        }
+
+        .markdown-cell blockquote {
+            margin: 0 0 16px 0;
+            padding: 0 1em;
+            color: #6a737d;
+            border-left: 4px solid #dfe2e5;
+        }
+
+        .markdown-cell ul,
+        .markdown-cell ol {
+            margin: 0 0 16px 0;
+            padding-left: 2em;
+        }
+
+        .markdown-cell li {
+            margin: 0.25em 0;
+        }
+
+        .markdown-cell a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+
+        .markdown-cell a:hover {
+            text-decoration: underline;
+        }
+
+        .markdown-cell hr {
+            border: 0;
+            border-top: 1px solid var(--jp-border-color1);
+            margin: 24px 0;
+        }
+
+        .markdown-cell img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .markdown-cell table {
+            border-collapse: collapse;
+            margin: 0 0 16px 0;
+        }
+
+        .markdown-cell table th,
+        .markdown-cell table td {
+            border: 1px solid #dfe2e5;
+            padding: 6px 13px;
+        }
+
+        .markdown-cell table th {
+            font-weight: 600;
+            background-color: #f6f8fa;
+        }
+
+        .markdown-cell table tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+
+        /* Raw cell styling */
+        .raw-cell {
+            background-color: var(--jp-layout-color1);
+            border: 1px solid var(--jp-border-color1);
+            border-radius: 2px;
+            padding: 8px 12px;
+            font-family: var(--jp-code-font-family);
+            font-size: 13px;
+            white-space: pre-wrap;
+        }
+
+        /* Empty prompt placeholder */
+        .prompt-empty {
+            color: transparent;
+        }
+
+        .export-footer {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid var(--jp-border-color1);
+            color: #555;
+            font-size: 13px;
+            text-align: center;
+        }
+
+        .export-footer a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+
+        .export-footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="notebook-container">
+        <div class="cell cell-code">
+            <div class="cell-prompt input-prompt">In [7]:</div>
+            <div class="cell-content">
+                <div class="input-area"><pre>from pathlib import Path
+
+import pandas as pd
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix, f1_score
+from sklearn.model_selection import train_test_split
+from sklearn.naive_bayes import GaussianNB, MultinomialNB
+
+
+def dataset_path(name):
+    for folder in (Path.cwd(), *Path.cwd().parents):
+        path = folder / "practical_labs" / name
+        if path.exists():
+            return path
+    raise FileNotFoundError(f"Could not find practical_labs/{name}")
+
+
+# Part A: spam classification
+emails = pd.read_csv(dataset_path("Lab2_dataset.csv"))
+X_train, X_test, y_train, y_test = train_test_split(
+    emails["text"].fillna(""), emails["label"], test_size=0.2,
+    random_state=42, stratify=emails["label"]
+)
+vectorizer = TfidfVectorizer(stop_words="english", min_df=2, max_features=3000)
+X_train_vec = vectorizer.fit_transform(X_train)
+X_test_vec = vectorizer.transform(X_test)
+
+models = {"GaussianNB": GaussianNB(), "MultinomialNB": MultinomialNB()}
+results = {}
+for name, model in models.items():
+    Xtr = X_train_vec.toarray() if name == "GaussianNB" else X_train_vec
+    Xte = X_test_vec.toarray() if name == "GaussianNB" else X_test_vec
+    model.fit(Xtr, y_train)
+    predictions = model.predict(Xte)
+    results[name] = (model, predictions, accuracy_score(y_test, predictions),
+                     f1_score(y_test, predictions, pos_label="spam"))
+
+print("Test-set performance (accuracy and spam F1)")
+print(pd.DataFrame({name: {"accuracy": r[2], "spam F1": r[3]} for name, r in results.items()}).T.round(3))
+best_name = max(results, key=lambda name: results[name][2])
+print(f"Better model by accuracy: {best_name}")
+print("\nBest-model classification report:")
+print(classification_report(y_test, results[best_name][1], zero_division=0))
+print("Confusion matrix (ham, spam):")
+print(confusion_matrix(y_test, results[best_name][1], labels=["ham", "spam"]))
+print("\nSample predictions:")
+print(pd.DataFrame({
+    "email": X_test.iloc[:8].str.replace(r"\\s+", " ", regex=True).str.slice(0, 110).to_numpy(),
+    "actual": y_test.iloc[:8].to_numpy(),
+    "predicted": results[best_name][1][:8],
+}).to_string(index=False))
+</pre></div>
+                <div class="output-area">
+                    <div class="output-wrapper">
+                        <div class="cell-prompt output-prompt"></div>
+                        <div class="output-content">
+                            <div class="output-stream">Test-set performance (accuracy and spam F1)
+               accuracy  spam F1
+GaussianNB        0.970    0.949
+MultinomialNB     0.941    0.902
+Better model by accuracy: GaussianNB
+
+Best-model classification report:
+              precision    recall  f1-score   support
+
+         ham       0.98      0.97      0.98       735
+        spam       0.94      0.96      0.95       300
+
+    accuracy                           0.97      1035
+   macro avg       0.96      0.97      0.96      1035
+weighted avg       0.97      0.97      0.97      1035
+
+Confusion matrix (ham, spam):
+[[716  19]
+ [ 12 288]]
+
+Sample predictions:
+                                                                                                           email actual predicted
+ Subject: final cp name change and merger report 08 / 00\njust to clarify , i was in the february 2000 report in    ham       ham
+                                     Subject: calpine daily gas nomination\n- hidalgo daily gas nomination . doc    ham       ham
+Subject: calpine daily gas nomination\n&gt;\naimee , i will be out of the office friday and monday . in my absence     ham       ham
+Subject: wells\ndaren , i think i may have lost my mind ( no comment vance ) but did i talk to\nyou about meter     ham       ham
+                Subject: first deliveries - comstock oil &amp; gas and hesco gathering company\nsee attached letters    ham       ham
+Subject: 3 . 25 rate confirmation # 367886924 jb wed , 29 jun 2005 09 : 35 : 02 - 0800\nhello ,\nwe sent you an    spam      spam
+                                           Subject: first delivery - rodessa operating co .\nsee attached letter    ham       ham
+Subject: new pan energy exchange deal meeting\ndaren ,\nplease let me know when you have time to meet with megan    ham       ham
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell cell-code">
+            <div class="cell-prompt input-prompt">In [8]:</div>
+            <div class="cell-content">
+                <div class="input-area"><pre># Part B: Airbnb nightly-price outliers
+# outliers were identified using three methods: Mean ± 3 SD, Median ± 1.5 IQR, and 1st–99th percentiles
+listings = pd.read_csv(dataset_path("AB_NYC_2019.csv"))
+valid_prices = listings.loc[listings["price"] &gt; 0].copy()
+price = valid_prices["price"]
+mean, std = price.mean(), price.std()
+q1, median, q3 = price.quantile([0.25, 0.5, 0.75])
+iqr = q3 - q1
+lower_iqr, upper_iqr = q1 - 1.5 * iqr, q3 + 1.5 * iqr
+lower_pct, upper_pct = price.quantile([0.01, 0.99])
+methods = pd.DataFrame({
+    "method": ["Mean ± 3 SD", "Median ± 1.5 IQR", "1st–99th percentiles"],
+    "lower bound": [max(0, mean - 3 * std), lower_iqr, lower_pct],
+    "upper bound": [mean + 3 * std, upper_iqr, upper_pct],
+})
+methods["outliers removed"] = [
+    ((price &lt; row["lower bound"]) | (price &gt; row["upper bound"])).sum()
+    for _, row in methods.iterrows()
+]
+print("\nPrice distribution before cleaning:")
+print(price.describe(percentiles=[0.01, 0.25, 0.5, 0.75, 0.99]).round(2))
+print("\nOutlier method comparison (non-positive prices excluded first):")
+print(methods.round(2).to_string(index=False))
+
+airbnb_clean = valid_prices.loc[price.between(lower_iqr, upper_iqr)].copy()
+print(f"\nClean dataset using median/IQR fences: {len(airbnb_clean):,} of {len(listings):,} listings retained; "
+      f"{len(listings) - len(airbnb_clean):,} removed.")
+print("Cleaned price summary:")
+print(airbnb_clean["price"].describe().round(2))
+print("Remaining IQR outliers:", int((~airbnb_clean["price"].between(lower_iqr, upper_iqr)).sum()))</pre></div>
+                <div class="output-area">
+                    <div class="output-wrapper">
+                        <div class="cell-prompt output-prompt"></div>
+                        <div class="output-content">
+                            <div class="output-stream">
+Price distribution before cleaning:
+count    48884.00
+mean       152.76
+std        240.17
+min         10.00
+1%          30.00
+25%         69.00
+50%        106.00
+75%        175.00
+99%        799.00
+max      10000.00
+Name: price, dtype: float64
+
+Outlier method comparison (non-positive prices excluded first):
+              method  lower bound  upper bound  outliers removed
+         Mean ± 3 SD          0.0       873.27               388
+    Median ± 1.5 IQR        -90.0       334.00              2972
+1st–99th percentiles         30.0       799.00               867
+
+Clean dataset using median/IQR fences: 45,912 of 48,895 listings retained; 2,983 removed.
+Cleaned price summary:
+count    45912.00
+mean       120.00
+std         68.13
+min         10.00
+25%         65.00
+50%        100.00
+75%        159.00
+max        334.00
+Name: price, dtype: float64
+Remaining IQR outliers: 0
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="export-footer">
+        Exported with <a href="https://www.runcell.dev/tool/ipynb-to-html">runcell</a> — convert notebooks to HTML or PDF anytime at runcell.dev.
+    </footer>
+</body>
+</html>
