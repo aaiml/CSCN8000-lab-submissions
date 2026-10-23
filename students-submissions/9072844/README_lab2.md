@@ -11,7 +11,7 @@
 | `lab2.ipynb` | Notebook with Part A and Part B, already executed |
 | `lab2.html` | HTML export of the notebook (published with GitHub Pages) |
 | `requirements_lab2.txt` | Python packages needed to run the notebook |
-| `AB_NYC_2019_clean_lab2.csv` | Clean Airbnb dataset produced in Part B |
+| `AB_NYC_2019_clean_lab2.csv` | Clean Airbnb dataset – not stored in the repo; it is created in this folder when the notebook runs (last cell of Part B) |
 
 The notebook reads the datasets from the course repository folder `practical_labs/` (`Lab2_dataset.csv` and `AB_NYC_2019.csv`) using the relative path `../../practical_labs/`.
 
